@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?1b31930a42ff5d5052aeff718635c04b";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+    <meta charset="utf-8">
+    <title>圈小猫-我变身了</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="full-screen" content="true">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-fullscreen" content="true">
+    <meta name="360-fullscreen" content="true">
+    <style>
+        body {
+            text-align: center;
+            background: #000000;
+            padding: 0;
+            border: 0;
+            margin: 0;
+            height: 100%;
+        }
+
+        html {
+            -ms-touch-action: none; /* Direct all pointer events to JavaScript code. */
+        }
+
+        .sbgshow {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            line-height: 1.7em;
+            background: rgba(0,0,0,0.85);
+        }
+
+            .sbgshow .arron {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .sbgshow p {
+                padding-top: 78px;
+            }
+
+        .sbg {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 26px;
+            line-height: 1.7em;
+            background: rgba(0,0,0,0.85);
+        }
+
+            .sbg .arron {
+                position: absolute;
+                top: 8px;
+                right: 8px;
+                width: 100px;
+                height: 100px;
+            }
+
+            .sbg p {
+                padding-top: 78px;
+            }
+
+        #download {
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 55px;
+            font-size: 14px;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            overflow: hidden;
+            zoom: 1;
+            z-index: 9999;
+        }
+
+            #download img {
+                display: block;
+                width: 40px;
+                float: left;
+                margin: 7.5px 10px auto 2.5%;
+            }
+
+            #download span {
+                display: block;
+            }
+
+        .download-mess {
+            float: left;
+            font-size: 12px;
+            margin-top: 8px;
+        }
+
+            .download-mess span:first-child {
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+        #download button {
+            -webkit-appearance: none;
+            border: none;
+            background: #da095c;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            -o-border-radius: 5px;
+            border-radius: 5px;
+            height: 35px;
+            width: 110px;
+            text-align: center;
+            line-height: 35px;
+            color: white;
+            font-size: 16px;
+            float: right;
+            margin-right: 2.5%;
+            margin-top: 10px;
+        }
+
+        a{
+            -webkit-touch-callout: none;
+            -webkit-appearance: none;
+            display: block;
+            color: #6c6155;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body style="padding: 0px; border: 0px; margin: 0px;">
+    <div style="display: inline-block; width: 100%; height: 100%; margin: 0 auto; background: black; position: relative;" id="gameDiv">
+        <canvas id="gameCanvas" width="480" height="800" style="width: 480px; height: 800px; background-color: rgb(0, 0, 0);"></canvas>
+    </div>
+    <div id="sbg" class="sbg">
+        <div class="arron"></div>
+        <p id="msg">
+            请点击右侧的【分享】<br>
+            测测你好友的神经指数吧！
+        </p>
+    </div>
+    <script>        var document_class = "GameApp";</script><!--这部分内容在编译时会被替换，要修改文档类，请到工程目录下的egretProperties.json内编辑。-->
+ <script language="javascript" type="text/javascript" src="static/js/resource_loader.js?ver=255"></script>
+<script src="static/js/egret_loader.js"></script>
+<script src="static/js/game-min-0722.js?223"></script>
+
+<script>
+    var mebtnopenurl = '';
+    window.shareData = {
+        "imgUrl": "static/images/shenjingcat.png",
+        "timeLineLink": "http://max.dzgg.com/c.php?id=6003/shenjingmao",
+        "tTitle": "围住神经猫-根本停不下来，玩过之后我整个人都精神了！",
+        "tContent": "在9×9范围内的格子中，使用色块围住白色神经猫。"
+    };
+
+    function showme() {
+        window.location.href = "http://max.dzgg.com/c.php?id=6003";
+    }
+    function dp_share(n, m) {
+        if (m == 0) {
+            document.title = window.shareData.tContent = "围住神经猫-根本停不下来，玩过之后我整个人都精神了！"
+        }
+        if (m == 1) {
+            document.title = window.shareData.tContent = "我用了" + n + "步围住神经猫，击败" + (100 - n) + "%的人，你能超过我吗？"
+        }
+        if (m == 2) {
+            document.title = window.shareData.tContent = "围住神经猫-我没有围住它，谁能帮个忙？"
+        }
+        document.getElementById("sbg").className = "sbgshow";
+        window.setTimeout(hiddenMe, 5000);
+    }
+
+    function hiddenMe() {
+        document.getElementById("sbg").className = "sbg";
+    }
+
+    egret_h5.startGame();
+    $j(document).ready(function () {
+        if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+            //
+        } else {
+            $j(".aliForPc").show();
+        }
+    });
+</script>
+
+<script type="text/javascript" src="//js.users.51.la/21244017.js"></script>
+</body></html>
