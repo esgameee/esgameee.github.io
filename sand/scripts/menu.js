@@ -20,7 +20,7 @@
 /* Configuration of the menu */
 const ELEMENT_MENU_ELEMENTS_PER_ROW = 4;
 const PEN_SIZES = [2, 4, 8, 16, 32, 64];
-const PEN_SIZE_LABELS = ["1px", "2px", "4px", "8px", "16px", "32px"];
+const PEN_SIZE_LABELS = ["1", "2", "4", "8", "16", "32"];
 const DEFAULT_PEN_IDX = 1;
 
 /* Elements listed in the menu */
@@ -36,32 +36,32 @@ const elementMenuItems = [
 ];
 
 const menuNames = {};
-menuNames[WALL] = "WALL";
-menuNames[SAND] = "SAND";
-menuNames[WATER] = "WATER";
-menuNames[PLANT] = "PLANT";
-menuNames[FIRE] = "FIRE";
-menuNames[SALT] = "SALT";
-menuNames[OIL] = "OIL";
-menuNames[SPOUT] = "SPOUT";
-menuNames[WELL] = "WELL";
-menuNames[TORCH] = "TORCH";
-menuNames[GUNPOWDER] = "GUNPOWDER";
-menuNames[WAX] = "WAX";
-menuNames[NITRO] = "NITRO";
-menuNames[NAPALM] = "NAPALM";
+menuNames[WALL] = "墙";
+menuNames[SAND] = "沙子";
+menuNames[WATER] = "水";
+menuNames[PLANT] = "植物";
+menuNames[FIRE] = "火";
+menuNames[SALT] = "盐";
+menuNames[OIL] = "油";
+menuNames[SPOUT] = "雨云";
+menuNames[WELL] = "油雨";
+menuNames[TORCH] = "火炬";
+menuNames[GUNPOWDER] = "火药";
+menuNames[WAX] = "蜡";
+menuNames[NITRO] = "硝基";
+menuNames[NAPALM] = "凝固汽油弹";
 menuNames[C4] = "C-4";
-menuNames[CONCRETE] = "CONCRETE";
-menuNames[BACKGROUND] = "ERASER";
-menuNames[FUSE] = "FUSE";
-menuNames[ICE] = "ICE";
-menuNames[LAVA] = "LAVA";
-menuNames[METHANE] = "METHANE";
-menuNames[CRYO] = "CRYO";
+menuNames[CONCRETE] = "混凝土";
+menuNames[BACKGROUND] = "橡皮擦";
+menuNames[FUSE] = "保险丝";
+menuNames[ICE] = "冰";
+menuNames[LAVA] = "熔岩";
+menuNames[METHANE] = "甲烷";
+menuNames[CRYO] = "冰冻";
 menuNames[MYSTERY] = "???";
-menuNames[SOIL] = "SOIL";
-menuNames[ACID] = "ACID";
-menuNames[THERMITE] = "THERMITE";
+menuNames[SOIL] = "土壤";
+menuNames[ACID] = "酸";
+menuNames[THERMITE] = "铝热剂";
 
 /*
  * Some element colors do not have very good contrast against

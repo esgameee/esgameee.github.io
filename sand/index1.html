@@ -4,7 +4,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="styles.css" media="screen" />
-  <title>上帝沙盒</title>
+  <title>Project Sand</title>
   <meta name="keywords" content="sand, falling, game" />
   <meta name="description" content="Project Sand: A modern version of the classic Hell of Sand Falling Game" />
   <meta name="subject" content="Project Sand" />
@@ -26,16 +26,11 @@
 
 <div class="wrapper" id="gameWrapper">
   <div id="titleWrapper">
-    <h1 class="title">Project Sand</h1>
+
     <div class="subheader">
-      <div class="column-left">
-        <a href="https://github.com/joshdon/ProjectSand" target="_blank">Source Code</a>
-      </div>
-      <div class="column-center">
-        By: Josh Don
-      </div>
+
       <div class="column-right">
-        <a href="http://androdome.com/Sand/" target="_blank">Original Applets</a>
+
       </div>
     </div>
   </div>
@@ -46,7 +41,7 @@
     </table>
     <div id="optionsCol1" class="optionsCol">
       <div id="penSizeDiv">
-        <label for="pensize">Pen Size</label>
+        <label for="pensize">粒子大小</label>
         <select id="pensize"></select>
       </div>
       <div>
@@ -68,19 +63,19 @@
     </div>
     <div id="optionsCol2" class="optionsCol">
       <div>
-        <label for="overwriteCheckbox">Overwrite</label>
+        <label for="overwriteCheckbox">粒子覆盖</label>
         <input type="checkbox" id="overwriteCheckbox">
       </div>
       <div id="speedSliderDiv">
-        <label for="speedSlider">Speed</label>
+        <label for="speedSlider">速度</label>
         <input type="range" id="speedSlider">
       </div>
       <div class="optionButtonContainer">
-        <input id="saveButton" class="optionButton" type="button" value="Save">
-        <input id="loadButton" class="optionButton" type="button" value="Load">
+        <input id="saveButton" class="optionButton" type="button" value="备份">
+        <input id="loadButton" class="optionButton" type="button" value="恢复">
       </div>
       <div id="clearButtonDiv" class="optionButtonContainer">
-        <input id="clearButton" class="optionButton" type="button" value="Clear">
+        <input id="clearButton" class="optionButton" type="button" value="清空">
       </div>
     </div>
     <div id="fps-counter">
